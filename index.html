@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bui's portfolio</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">    
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">    
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
+          <div class="container-fluid" style="padding-left: 2%;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item dropdown inactive">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About me</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <div>
+            <h1>Welcome to my website (it's still under construction)</h1>
+        </div>
+        <div class="grid-wrapper mt-3" id="resources">
+            <div class="image-thumbnail-wrapper" id="lte-thumb">
+                <div class="thumbnail-with-text">
+                    <img src="resources/images/mobilephone.jpg" class="img-thumbnail" alt="lte-thumb">
+                    <span class="text-over-thumbnail">LTE/NR Resources</span>
+                </div>
+                <div class="speech" id="lte-speech">
+                    Ever wondered how your 4G/5G smartphone can access Internet anytime and anywhere? Let's find out how a smartphone can connect wirelessly to the ubiquitous access points known as "base stations".
+                </div>
+            </div>
+            <div class="image-thumbnail-wrapper" id="netw-thumb">
+                <div class="thumbnail-with-text">
+                    <img src="resources/images/network.jpg" class="img-thumbnail" alt="netw-thumb">
+                    <span class="text-over-thumbnail">Computer Networking Resources</span>
+                </div>
+                <div class="speech" id="netw-speech">
+                    Once the data packets from your smartphone reach a base station and then a router, they will start an incredible journey through interconnected networks until they either reach their destinations, or get dropped midway. Want to know how all of that happen?
+                </div>                
+            </div>
+            <div class="image-thumbnail-wrapper" id="web-dev-thumb">
+                <div class="thumbnail-with-text">
+                    <img src="resources/images/webdev.jpg" class="img-thumbnail" alt="web-dev-thumb">
+                    <span class="text-over-thumbnail">Web Development Resources</span>
+                </div>
+                <div class="speech" id="webdev-speech">
+                    If you are browsing a website, and your request packets have successfully reached the server hosting the site, the server will send back necessary files to tell the web browser how to display the requested site and how to react when receiving your input. Want to learn how to create such files in details?
+                </div>                   
+            </div>            
+            <div class="image-thumbnail-wrapper" id="data-and-alg-thumb">
+                <div class="thumbnail-with-text">
+                    <img src="resources/images/data-and-alg.png" class="img-thumbnail" alt="data-and-alg-thumb">
+                    <span class="text-over-thumbnail">Data Structures and Algorithms</span>
+                </div>
+                <div class="speech" id="data-alg-speech">
+                    In order to provide us with the best possible experiences, the computers, be it your smartphone, the base stations, the severs, or even the routers, need organized ways (structures) to store data in their memory and logics (algorithms) that make use of them in the most efficient way. Are you ready to dive into the exiciting world of data structures and algorithms?
+                </div>                   
+            </div>
+            <div class="image-thumbnail-wrapper" id="jap-thumb">
+                <div class="thumbnail-with-text">
+                    <img src="resources/images/japanese.jpg" class="img-thumbnail" alt="jap-thumb">
+                    <span class="text-over-thumbnail">Japanese Learning Tips</span>
+                </div>
+                <div class="speech" id="jap-speech">
+                    Learning new languages is always challenging, and Japanese is no exception. In fact, it is one of the hardest language in the world to master. Don't be intimidated, though. Let's study together, and we will be able to hold basic conversation in no time.
+                </div>                  
+            </div>                  
+        </div>
+        <hr style="margin-bottom: 50px">
+        <div>
+            <h1>My Projects</h1>
+        </div>
+
+        <div class="projects react">
+            <h2>React.js projects</h2>
+            <div class="image-thumbnail-wrapper">
+                <div class="thumbnail-with-text">
+                    <a href="https://buihoanganhtuan.github.io/robofriends/" target="_blank">
+                        <img src="resources/images/robofr.png" class="img-thumbnail" id="robofr-thumb" alt="robofr-thumb">
+                        <span class="text-over-thumbnail">Robot Friends</span>                      
+                    </a>
+                </div>
+                <div class="speech" id="robo-speech">
+                    Go here and meet your new, robotic, friends. You can even search through their names using the search bar. This app is built using React.js following the instructions from Andrei Neagoie @ zerotomastery.io
+                </div>                
+            </div>
+            <div class="image-thumbnail-wrapper">
+                <a href="https://smart-brain-bui.herokuapp.com/" target="_blank">
+                    <div class="thumbnail-with-text">
+                        <img src="resources/images/brain.jpg" class="img-thumbnail" id="brain-thumb" alt="brain-thumb">
+                        <span class="text-over-thumbnail">Smart Brain</span>
+                    </div>
+                    <div class="speech" id="brain-speech">
+                        Register your own account and gain the ability to detect faces from images with this app. The app will also keep track of how many images a user has input. This app is built using React.js, Node.js, and PostgreSQL following the instructions from Andrei Neagoie @ zerotomastery.io
+                    </div>                      
+                </a>
+            </div>                        
+        </div>
+        <div class="projects keras">
+            <h2>Keras projects (Tensorflow backend)</h2>
+            <div class="image-thumbnail-wrapper">
+                <a href="https://github.com/buihoanganhtuan/DQN-LTE" target="_blank">
+                    <div class="thumbnail-with-text">
+                        <img src="resources/images/deeprl.jpg" class="img-thumbnail" id="deeprl-thumb" alt="deeprl-thumb">
+                        <span class="text-over-thumbnail">Deep Q Network for LTE Access</span>
+                    </div>
+                </a>
+                <div class="speech" id="deeprl-speech">
+                    This project uses Python and the Keras framework to implement a deep reinforcement learning system at the base stations to help them dynamically adjust the access control parameters to achieve a balance between delay and energy consumption of LTE end-user devices.
+                </div>                
+            </div>             
+        </div>
+        <hr>        
+        <div id="contact-bar" class="flex-wrapper">
+            <a href="https://www.linkedin.com/in/bui-hoang-anh-tuan-b4a37515b/" target="_blank">
+                <img src="resources/images/linkedin.jpg" class="rounded-circle social-handle drop-shadow" >
+            </a>
+            <a href="https://join.skype.com/invite/cyigDNm9bMqF" target="_blank">
+                <img src="resources/images/skype.png" class="rounded-circle social-handle drop-shadow" >
+            </a>            
+            <a href="https://github.com/buihoanganhtuan" target="_blank">
+                <img src="resources/images/github.png" class="rounded-circle social-handle drop-shadow" >
+            </a>                  
+            <a href="https://leetcode.com/BuiHoangAnhTuan/" target="_blank">
+                <img src="resources/images/leetcode.png" class="rounded-circle social-handle drop-shadow" >
+            </a>                                                     
+        </div>
+        <div style="margin-bottom: 30px">
+        </div>                                             
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    </body>
+</html>
