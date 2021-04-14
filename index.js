@@ -22,7 +22,6 @@
 
 $(document).ready(() => {	
 	let id = Math.floor(Math.random() * 1000) + 1;
-	console.log('index loaded')
 	$("#robofr-thumb").attr("src", `https://robohash.org/${id}?200x200`)
 
 	$(".thumbnail-with-text").mouseenter(function() {
@@ -32,6 +31,30 @@ $(document).ready(() => {
 	.mouseleave(function() {
 		let id = '#' + $(this).attr('id').replace('thumb','') + 'speech';
 		$(id).fadeOut(0);
+	})
+
+	$(window).resize(function() {
+		const resourceGridWrapper = $("#resources");
+		const numChild = resourceGridWrapper.children().length;
+		const contentWidth = resourceGridWrapper.width();
+		const outerWidth = resourceGridWrapper.outerWidth(true);
+		const innerWidth = resourceGridWrapper.innerWidth();
+		const margin = outerWidth - resourceGridWrapper.outerWidth();
+		let pad = 0;
+		console.log(margin)
+		let numItems = Math.floor((innerWidth + 10) / (250 + 10));
+		if (numItems > numChild) {
+			pad = (outerWidth - margin - ( 250*numChild + (numChild - 1)*10 )) / 2;
+			resourceGridWrapper.css('padding-left', pad);
+			resourceGridWrapper.css('padding-right', pad);			
+		} else {
+			const contentWidth = resourceGridWrapper.width();
+			if (contentWidth < 250) {
+				pad = (outerWidth - margin - 250) / 2;
+				resourceGridWrapper.css('padding-left', pad);
+				resourceGridWrapper.css('padding-right', pad);
+			}
+		}
 	})
 }
 )

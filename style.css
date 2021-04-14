@@ -199,7 +199,7 @@ body.about-page::before {
 .speech {
 	display: none;
 	position: absolute;
-	margin: 10% -70% 0 -70%;
+	margin: 10% -50% 0 -50%;
 	padding: 0 10% 0 10%;
 	text-align: center;
 	color: #000;
