@@ -24,6 +24,15 @@ $(document).ready(() => {
 	let id = Math.floor(Math.random() * 1000) + 1;
 	console.log('index loaded')
 	$("#robofr-thumb").attr("src", `https://robohash.org/${id}?200x200`)
+
+	$(".thumbnail-with-text").mouseenter(function() {
+		let id = '#' + $(this).attr('id').replace('thumb','') + 'speech';
+		$(id).fadeIn("fast");
+	})
+	.mouseleave(function() {
+		let id = '#' + $(this).attr('id').replace('thumb','') + 'speech';
+		$(id).fadeOut(0);
+	})
 }
 )
 

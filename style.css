@@ -204,15 +204,16 @@ body.about-page::before {
 	text-align: center;
 	color: #000;
 	z-index: 100;
-}
-
-.image-thumbnail-wrapper:hover .speech {
 	border-radius: 10px;
 	border-color: #fae9cd;
 	border-style: solid;
-	background-color: rgba(250, 233, 205, 1);
-	display: flex;
+	background-color: rgba(250, 233, 205, 1);	
 }
+
+/*.image-thumbnail-wrapper:hover .speech {
+	display: flex;
+}*/
+
 
 #contact-bar {
 	position: relative;

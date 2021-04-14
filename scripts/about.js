@@ -9,7 +9,7 @@ $(document).ready(() => {
 			let newInfo = event.target.getAttribute('id').replace('-btn','');
 			console.log(oldInfo, newInfo)
 			$(`#${oldInfo}-para`).hide();
-			$(`#${newInfo}-para`).show();
+			$(`#${newInfo}-para`).fadeIn("slow");
 		}
 	});
 }
