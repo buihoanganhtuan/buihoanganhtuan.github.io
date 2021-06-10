@@ -36,13 +36,12 @@ $(document).ready(() => {
 	$(window).resize(function() {
 		const resourceGridWrapper = $("#resources");
 		const numChild = resourceGridWrapper.children().length;
-		const contentWidth = resourceGridWrapper.width();
-		const outerWidth = resourceGridWrapper.outerWidth(true);
 		const innerWidth = resourceGridWrapper.innerWidth();
+		const outerWidth = resourceGridWrapper.outerWidth(true);
 		const margin = outerWidth - resourceGridWrapper.outerWidth();
 		let pad = 0;
-		console.log(margin)
 		let numItems = Math.floor((innerWidth + 10) / (250 + 10));
+
 		if (numItems > numChild) {
 			pad = (outerWidth - margin - ( 250*numChild + (numChild - 1)*10 )) / 2;
 			resourceGridWrapper.css('padding-left', pad);
